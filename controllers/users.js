@@ -8,8 +8,8 @@ signToken = ((user) => {
     return JWT.sign({
         iss: 'ApiAuth',
         sub: user.id,
-        iat: newDate().getTime(),
-        exp: nemDate().setDate(new Date().getDate() + 1)
+        iat: new Date().getTime(),
+        exp: new Date().setDate(new Date().getDate() + 1)
     }, JWT_SECRET)
 })
 
@@ -32,7 +32,7 @@ module.exports = {
 
     signin: async (req, res, next) => {
         const token = signToken(req.user)
-        rest.status(200).json({token})
+        res.status(200).json({token})
     },
 
     secret: async (req, res, next) => {

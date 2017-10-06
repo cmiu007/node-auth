@@ -22,6 +22,6 @@ app.use(bodyParser.json())
 app.use('/users', routes)
 
 // 5
-const port = process.env.PORT || 3000
-app.listen(port)
+const port = process.env.PORT || 3001
+app.listen(port, '89.149.31.172')
 console.log('Serve listening at ${port}')

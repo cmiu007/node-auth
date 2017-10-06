@@ -1,7 +1,6 @@
 {
   "name": "auth",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start-dev": "nodemon app.js",
@@ -23,5 +22,14 @@
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
     "passport-local": "^1.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmiu007/node-auth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cmiu007/node-auth/issues"
+  },
+  "homepage": "https://github.com/cmiu007/node-auth#readme",
+  "description": ""
 }
